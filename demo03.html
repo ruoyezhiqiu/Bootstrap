@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo03</title>
+	<style>
+		.pos_absolute{
+			position: absolute;
+			left:200px;
+			top: 800px;
+		}
+	</style>
+	<style>
+		.pos_fixed{
+			position: fixed;
+			right: 0px;
+			top:50%;
+		}
+	</style>
+	<style>
+		.pos_left{
+			position: relative;
+			left: -20px;
+		}
+		.pos_right{
+			position: relative;
+			left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>这是这个标题的正常位置</h1>
+		<h1 class="pos_left">这个标题的位置向左移动了20px</h1>
+		<h1 class="pos_right">这个标题的位置向右移动了20px</h1>
+		<p style="color:red">其中position取值为：relative 表示相对定位：是相对于其正常位置的变化。</p>
+		<p>其中的left:-20Px表示相对于正常位置的，整个图向左边移动了20px。</p>
+		<p>其中的left:-20px表示相对于正常位置的，整个图向右边移动了20px。</p>
+	</div>
+	<div>
+		<h1>这是这个标题的正常位置</h1>
+		<h1 class="pos_absolute">这个标题的位置相对于其static以外的第一个父元素的位置。</h1>
+		<p style="color:red">通过绝对定位，元素可以放到页面的任何位置！</p>
+		<p style="color:red">这里的position取值为：absolute 代表其相对static定位以外的第一个父元素的定位。</p>
+	</div>
+	<div>
+		<h1>这是这个标题的正常位置</h1>
+		<h1 class="pos_fixed" style="color:">这个标题是相对于窗口固定的！</h1>
+	</div>
+</body>
+</html>

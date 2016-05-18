@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>bootstrap表格</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<style>
+		.table>thead>tr>th{
+			background-color:#71B9D4;
+		}
+		.table-hover > tbody > tr:hover {
+			background-color: #D9F5EB;
+		}
+		caption{
+			text-align:center;
+			font:700 14px "微软雅黑";
+		}
+		.table-striped{
+			background-color:#B2F7C7;
+		}
+		</style>
+	</head>
+	<body>
+		<table class="table table-striped table-bordered table-hover">
+			<caption>客户订单</caption>
+			<thead>
+				<tr>
+					<th>产品日期</th>
+					<th>付款日期</th>
+					<th>状态</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>产品1</td>
+					<td>23/11/2013</td>
+					<td>待发货</td>
+				</tr>
+				<tr>
+					<td>产品2</td>
+					<td>10/11/2013</td>
+					<td>发货中</td>
+				</tr>
+				<tr>
+					<td>产品3</td>
+					<td>20/10/2013</td>
+					<td>待确认</td>
+				</tr>
+				<tr>
+					<td>产品4</td>
+					<td>20/10/2013</td>
+					<td>已退货</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

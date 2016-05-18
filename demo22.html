@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>垂直导航条</title>
+	<style>
+		ul{
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			width:200px;
+			background-color:#f1f1f1;
+		}
+		li>a{
+			display:block;
+			padding:8px 0 8px 16px;
+			color:#000;
+			text-decoration:none;
+		}
+		li>a:hover{
+			background-color:#555;
+			color:white;
+
+		}
+		li>div{
+			display:none;
+		}
+		li>div:hover{
+			display:block;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">news</a>
+		<div>
+			<a href="#">111</a>
+			<a href="#">222</a>
+			<a href="#">333</a>
+			<a href="#">444</a>
+			<a href="#">555</a>
+		</div>
+		</li>
+		<li><a href="#">blog</a></li>
+		<li><a href="#">about</a></li>
+	</ul>
+</body>
+</html>

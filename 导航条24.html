@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>导航条含下拉框</title>
+		<style>
+		.nav{
+			margin-left:15%;
+			width:70%;
+		}
+			ul{
+				list-style-type:none;
+				padding:0;
+				margin:0;
+				width:100%;
+				overflow:hidden;
+			}
+			li{
+				background-color:#dedef8;
+				float:left;
+				width:20%;
+			}
+			li a{
+				display:inline-block;
+				text-align:center;
+				text-decoration:none;
+				padding:14px 16px;
+				width:100%;
+			}
+			li a:hover,.dropdown:hover .dropbtn{
+				background-color:#111;
+				color:white;
+			}
+			.dropdown{
+				display:inline-block;
+			}
+			.guonei{
+				display:none;
+				position:absolute;
+				background-color:orange-yellow;
+				width:11.5%;
+				
+			}
+			.guonei a{
+				display:block;
+				padding:12px 16px;
+				text-align:center;
+				color:white;
+				background-color:#111;
+			}
+			.guonei a:hover{
+				background-color:#333;
+			}
+			.dropdown:hover .guonei {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li class="dropdown"><a href="#" class="dropbtn">国内新闻</a>
+				<div class="guonei">
+					<a href="#">娱乐</a>
+					<a href="#">社会</a>
+					<a href="#">人文</a>
+				</div>
+			</li>
+			<li><a href="#">国外新闻</a></li>
+			<li><a href="#">摄影</a></li>
+			<li><a href="#">旅游</a></li>
+		</ul>
+	</div>
+</body>
+</html>
